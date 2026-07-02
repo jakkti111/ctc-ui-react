@@ -1,0 +1,1 @@
+import{t as e}from"./jsx-runtime-9YgKe2Eq.js";var t=e(),n={sm:{wh:8,c:4,r:2.5},md:{wh:10,c:5,r:4}},r=({size:e=`md`,...r})=>(0,t.jsx)(`svg`,{width:n[e].wh,height:n[e].wh,viewBox:`0 0 ${n[e].wh} ${n[e].wh}`,fill:`none`,...r,children:(0,t.jsx)(`circle`,{cx:n[e].c,cy:n[e].c,r:n[e].r,fill:`currentColor`,stroke:`currentColor`})});export{r as t};

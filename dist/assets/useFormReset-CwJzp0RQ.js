@@ -1,0 +1,1 @@
+import{o as e}from"./jsx-runtime-9YgKe2Eq.js";import{t}from"./react-JjZAc9W2.js";import{N as n}from"./useFocusRing-4APusEXv.js";var r=e(t(),1);function i(e,t,i){let a=n(()=>{i&&i(t)});(0,r.useEffect)(()=>{let t=e?.current?.form;return t?.addEventListener(`reset`,a),()=>{t?.removeEventListener(`reset`,a)}},[e])}export{i as t};

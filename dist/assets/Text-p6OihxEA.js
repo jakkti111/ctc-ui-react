@@ -1,0 +1,1 @@
+import{o as e}from"./jsx-runtime-9YgKe2Eq.js";import{t}from"./react-JjZAc9W2.js";import{T as n,x as r}from"./useFocusRing-4APusEXv.js";var i=e(t(),1),a=(0,i.createContext)({}),o=(0,i.forwardRef)(function(e,t){[e,t]=r(e,t,a);let{elementType:o=`span`,...s}=e,c=n[o];return i.createElement(c,{className:`react-aria-Text`,...s,ref:t})});export{a as n,o as t};

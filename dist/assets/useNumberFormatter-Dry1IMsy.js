@@ -1,0 +1,1 @@
+import{o as e}from"./jsx-runtime-9YgKe2Eq.js";import{t}from"./react-JjZAc9W2.js";import{t as n}from"./context-KcobXXcF.js";import{t as r}from"./NumberFormatter-B3_vALwB.js";var i=e(t(),1);function a(e={}){let{locale:t}=n();return(0,i.useMemo)(()=>new r(t,e),[t,e])}export{a as t};

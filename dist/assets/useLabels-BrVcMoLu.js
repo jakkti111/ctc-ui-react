@@ -1,0 +1,1 @@
+import{ct as e}from"./useFocusRing-4APusEXv.js";function t(t,n){let{id:r,"aria-label":i,"aria-labelledby":a}=t;return r=e(r),a&&i?a=[...new Set([r,...a.trim().split(/\s+/)])].join(` `):a&&=a.trim().split(/\s+/).join(` `),!i&&!a&&n&&(i=n),{id:r,"aria-label":i,"aria-labelledby":a}}export{t};
