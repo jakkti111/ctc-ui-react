@@ -2,90 +2,90 @@
 
 # CTC UI React — Component Preview
 
-A comprehensive UI component showcase built on top of the [Untitled UI React](https://www.untitledui.com/react) open-source library. This project provides a browsable preview of **230+ pages** covering base components, application UI, marketing sections, and full-page examples.
+โปรเจกต์ตัวอย่างคอมโพเนนต์ UI ที่พัฒนาต่อยอดจากไลบรารีโอเพนซอร์ส [Untitled UI React](https://www.untitledui.com/react) โปรเจกต์นี้ให้พรีวิวแบบเข้าดูผ่านเบราว์เซอร์ได้กว่า **230+ หน้า** ครอบคลุมคอมโพเนนต์พื้นฐาน, Application UI, ส่วนการตลาด (Marketing) และตัวอย่างหน้าเต็มรูปแบบ
 
-## Tech Stack
+## เทคโนโลยีที่ใช้
 
-| Technology | Version | Purpose |
+| เทคโนโลยี | เวอร์ชัน | หน้าที่ |
 |-----------|---------|---------|
-| React | 19.2 | UI framework |
-| TypeScript | 5.9 | Type safety |
-| Tailwind CSS | 4.2 | Styling |
-| Vite | 8.0 | Build tool & dev server |
+| React | 19.2 | เฟรมเวิร์ก UI |
+| TypeScript | 5.9 | ระบบ Type safety |
+| Tailwind CSS | 4.2 | จัดการสไตล์ |
+| Vite | 8.0 | เครื่องมือ build & dev server |
 | React Aria | 1.16 | Accessibility |
-| Recharts | 3.8 | Charts & data visualization |
-| Lucide / Untitled UI Icons | Latest | Icon library |
+| Recharts | 3.8 | กราฟและการแสดงผลข้อมูล |
+| Lucide / Untitled UI Icons | ล่าสุด | ไลบรารีไอคอน |
 
-## Getting Started
+## เริ่มต้นใช้งาน
 
-### Prerequisites
+### สิ่งที่ต้องมีก่อน
 
-- Node.js 18+ installed
-- [pnpm](https://pnpm.io/installation) (recommended — the project ships a `pnpm-lock.yaml`), or npm/bun as an alternative
+- ติดตั้ง Node.js 18 ขึ้นไป
+- [pnpm](https://pnpm.io/installation) (แนะนำ — โปรเจกต์นี้มีไฟล์ `pnpm-lock.yaml` มาให้แล้ว) หรือใช้ npm/bun แทนก็ได้
 
-### Installation
+### วิธีติดตั้ง
 
 ```bash
-# Clone the repository
+# โคลนโปรเจกต์
 git clone https://github.com/jakkti111/ctc-ui-react.git
 cd ctc-ui-react
 
-# Install dependencies
+# ติดตั้ง dependencies
 pnpm install
 
-# or, with npm
+# หรือใช้ npm
 npm install --legacy-peer-deps
 ```
 
-> **Note:** `--legacy-peer-deps` is required with npm due to a peer dependency conflict between `eslint-plugin-import` and `eslint@10`. pnpm does not need this flag.
+> **หมายเหตุ:** ต้องใส่ `--legacy-peer-deps` เมื่อใช้ npm เนื่องจากมี peer dependency ขัดแย้งกันระหว่าง `eslint-plugin-import` กับ `eslint@10` ส่วน pnpm ไม่ต้องใส่ flag นี้
 
-### Development Server
+### รัน Dev Server
 
 ```bash
 pnpm dev
-# or: npm run dev
+# หรือ: npm run dev
 ```
 
-Open [http://localhost:5173](http://localhost:5173) in your browser.
+เปิดเบราว์เซอร์ไปที่ [http://localhost:5173](http://localhost:5173)
 
-### Build for Production
+### Build สำหรับ Production
 
 ```bash
 pnpm build
-# or: npm run build
+# หรือ: npm run build
 ```
 
-Output will be in the `dist/` directory. Preview the production build locally with `pnpm preview`.
+ไฟล์ผลลัพธ์จะอยู่ในโฟลเดอร์ `dist/` ดูตัวอย่างผลลัพธ์บนเครื่องได้ด้วยคำสั่ง `pnpm preview`
 
-### Storybook (Component Library Docs)
+### Storybook (เอกสารไลบรารีคอมโพเนนต์)
 
 ```bash
 pnpm storybook
-# or: npm run storybook
+# หรือ: npm run storybook
 ```
 
-Opens Storybook on [http://localhost:6006](http://localhost:6006).
+เปิด Storybook ที่ [http://localhost:6006](http://localhost:6006)
 
-### Type Check & Lint
+### ตรวจสอบ Type & Lint
 
 ```bash
-pnpm test          # Runs type-check + lint + prettier
-pnpm type-check    # TypeScript only
-pnpm lint          # ESLint only
-pnpm prettier      # Prettier format
+pnpm test          # รัน type-check + lint + prettier พร้อมกัน
+pnpm type-check    # ตรวจสอบ TypeScript เท่านั้น
+pnpm lint          # รัน ESLint เท่านั้น
+pnpm prettier      # จัดฟอร์แมตโค้ดด้วย Prettier
 ```
 
-## Project Structure
+## โครงสร้างโปรเจกต์
 
 ```
 ctc-ui-react/
-├── components/                    # Untitled UI library (open-source)
-│   ├── base/                      # Core UI components (17 categories)
+├── components/                    # ไลบรารี Untitled UI (โอเพนซอร์ส)
+│   ├── base/                      # คอมโพเนนต์พื้นฐาน (17 หมวดหมู่)
 │   │   ├── avatar/                # Avatar, AvatarLabelGroup
 │   │   ├── badges/                # Badge, BadgeWithDot, BadgeWithIcon
 │   │   ├── buttons/               # Button, SocialButtons, AppStoreButtons
 │   │   ├── checkbox/              # Checkbox
-│   │   ├── dropdown/              # Dropdown menus
+│   │   ├── dropdown/              # เมนูดรอปดาวน์
 │   │   ├── input/                 # Input, PinInput
 │   │   ├── progress-indicators/   # ProgressBar, CircleProgress
 │   │   ├── radio-buttons/         # RadioButton, RadioGroup
@@ -93,147 +93,147 @@ ctc-ui-react/
 │   │   ├── slider/                # Slider
 │   │   ├── tags/                  # Tags
 │   │   ├── textarea/              # Textarea
-│   │   ├── toggle/                # Toggle switch
+│   │   ├── toggle/                # สวิตช์ Toggle
 │   │   └── tooltip/               # Tooltip
-│   ├── application/               # Complex app components
-│   │   ├── activity-feed/         # Activity feed (custom)
-│   │   ├── alerts/                # Alert components (custom)
+│   ├── application/               # คอมโพเนนต์แอปพลิเคชันขั้นสูง
+│   │   ├── activity-feed/         # Activity feed (คัสตอม)
+│   │   ├── alerts/                # คอมโพเนนต์แจ้งเตือน (คัสตอม)
 │   │   ├── app-navigation/        # Header & sidebar navigation
-│   │   ├── carousel/              # Image carousel
-│   │   ├── charts/                # Bar, Line, Pie, Radar, Gauge charts
-│   │   ├── date-picker/           # Date & range picker
-│   │   ├── empty-state/           # Empty state patterns
-│   │   ├── file-upload/           # File upload with progress
-│   │   ├── loading-indicator/     # Spinners & loaders
-│   │   ├── modals/                # Modal dialogs
-│   │   ├── pagination/            # Pagination variants
-│   │   ├── slideout-menus/        # Slideout panel
-│   │   ├── table/                 # Data tables
-│   │   └── tabs/                  # Tab navigation
-│   ├── foundations/               # Design tokens & icons
-│   └── shared-assets/             # Illustrations, QR codes, etc.
+│   │   ├── carousel/              # แคโรเซลรูปภาพ
+│   │   ├── charts/                # กราฟแท่ง, เส้น, วงกลม, เรดาร์, เกจ
+│   │   ├── date-picker/           # เลือกวันที่ & ช่วงวันที่
+│   │   ├── empty-state/           # รูปแบบหน้าว่างข้อมูล
+│   │   ├── file-upload/           # อัปโหลดไฟล์พร้อม progress
+│   │   ├── loading-indicator/     # ตัวโหลด/สปินเนอร์
+│   │   ├── modals/                # กล่องโต้ตอบ Modal
+│   │   ├── pagination/            # รูปแบบ Pagination
+│   │   ├── slideout-menus/        # แผงเมนูเลื่อนออก
+│   │   ├── table/                 # ตารางข้อมูล
+│   │   └── tabs/                  # แท็บนำทาง
+│   ├── foundations/               # ดีไซน์โทเคน & ไอคอน
+│   └── shared-assets/             # ภาพประกอบ, QR code ฯลฯ
 │
-├── src/                           # Preview application
-│   ├── main.tsx                   # React entry point
-│   ├── app.tsx                    # App shell with sidebar navigation
+├── src/                           # แอปพลิเคชันสำหรับพรีวิว
+│   ├── main.tsx                   # จุดเริ่มต้น React
+│   ├── app.tsx                    # โครงแอปพร้อม sidebar navigation
 │   ├── components/
-│   │   ├── example-gallery.tsx    # Gallery grid with wireframe thumbnails
-│   │   ├── mock-templates.tsx     # Detail page routers
-│   │   ├── dashboard-details/     # 19 unique dashboard layouts
-│   │   ├── settings-details/      # 21 unique settings pages
-│   │   ├── informational-details/ # 19 unique informational pages
-│   │   ├── auth-details/          # 16 login + 21 signup pages
-│   │   ├── error-details/         # 14 unique 404 pages
-│   │   ├── verification-details/  # 3 verification + 5 forgot password
-│   │   └── email-details/         # 10 email templates
+│   │   ├── example-gallery.tsx    # กริดแกลเลอรีพร้อมภาพ wireframe ย่อ
+│   │   ├── mock-templates.tsx     # ตัวจัดเส้นทางหน้ารายละเอียด
+│   │   ├── dashboard-details/     # แดชบอร์ด 19 รูปแบบ
+│   │   ├── settings-details/      # หน้าตั้งค่า 21 รูปแบบ
+│   │   ├── informational-details/ # หน้าข้อมูล 19 รูปแบบ
+│   │   ├── auth-details/          # หน้า login 16 + สมัครสมาชิก 21 รูปแบบ
+│   │   ├── error-details/         # หน้า 404 จำนวน 14 รูปแบบ
+│   │   ├── verification-details/  # ยืนยันตัวตน 3 + ลืมรหัสผ่าน 5 รูปแบบ
+│   │   └── email-details/         # เทมเพลตอีเมล 10 รูปแบบ
 │   └── pages/
-│       ├── marketing/             # 18 marketing components + 10 examples
-│       └── *.tsx                  # Component showcase pages
+│       ├── marketing/             # คอมโพเนนต์การตลาด 18 + ตัวอย่าง 10 หน้า
+│       └── *.tsx                  # หน้าโชว์คอมโพเนนต์
 │
-├── styles/                        # Global styles
-│   ├── globals.css                # Tailwind imports & utilities
-│   ├── theme.css                  # Design tokens (colors, shadows, fonts)
-│   └── typography.css             # Typography scale
+├── styles/                        # สไตล์ส่วนกลาง
+│   ├── globals.css                # นำเข้า Tailwind & utilities
+│   ├── theme.css                  # ดีไซน์โทเคน (สี, เงา, ฟอนต์)
+│   └── typography.css             # สเกลตัวอักษร
 │
 ├── hooks/                         # Custom React hooks
-│   ├── use-active-item.ts         # Intersection observer tracking
-│   ├── use-breakpoint.ts          # Tailwind breakpoint detection
-│   ├── use-clipboard.ts           # Copy to clipboard
-│   └── use-resize-observer.ts     # Element resize tracking
+│   ├── use-active-item.ts         # ติดตามด้วย Intersection observer
+│   ├── use-breakpoint.ts          # ตรวจจับ breakpoint ของ Tailwind
+│   ├── use-clipboard.ts           # คัดลอกไปคลิปบอร์ด
+│   └── use-resize-observer.ts     # ติดตามการเปลี่ยนขนาด element
 │
-├── utils/                         # Utilities
-│   ├── cx.ts                      # Tailwind merge (class merging)
-│   ├── countries.tsx              # Country data
-│   ├── is-react-component.ts      # Component type detection
-│   └── timezones.tsx              # Timezone data
+├── utils/                         # ยูทิลิตี้
+│   ├── cx.ts                      # รวม class ของ Tailwind
+│   ├── countries.tsx              # ข้อมูลประเทศ
+│   ├── is-react-component.ts      # ตรวจสอบชนิดของคอมโพเนนต์
+│   └── timezones.tsx              # ข้อมูล timezone
 │
 ├── index.html                     # HTML entry
-├── vite.config.mts                # Vite configuration
-├── tsconfig.json                  # TypeScript configuration
+├── vite.config.mts                # ค่าคอนฟิก Vite
+├── tsconfig.json                  # ค่าคอนฟิก TypeScript
 └── package.json                   # Dependencies & scripts
 ```
 
-## Pages Overview
+## ภาพรวมหน้าทั้งหมด
 
-### Base Components (27 pages)
+### คอมโพเนนต์พื้นฐาน (27 หน้า)
 
 Avatars, Badge groups, Badges, Button groups, Buttons, Checkboxes, Credit cards, Dropdowns, Featured icons, Illustrations, Inputs, Mobile app store buttons, Progress indicators, QR codes, Radio buttons, Radio groups, Rating badge & stars, Select, Multi select, Sliders, Social buttons, Tags, Textareas, Toggles, Tooltips, Utility buttons, Verification code inputs
 
-### Application UI Components (37 pages)
+### คอมโพเนนต์ Application UI (37 หน้า)
 
 Activity feeds, Activity gauges, Alerts, Breadcrumbs, Calendars, Card headers, Carousels, Code snippets, Color pickers, Command menus, Content dividers, Date pickers, Empty states, File uploaders, Filter bars, Gradient pickers, Header navigations, Image pickers, Inline CTAs, Line & bar charts, Loading indicators, Messaging, Metrics, Modals, Notifications, Page headers, Pagination, Pie charts, Progress steps, Radar charts, Section footers, Section headers, Sidebar navigations, Slideout menus, Tables, Tabs, Tree views
 
-### Application UI Examples (6 gallery pages → 128 detail pages)
+### ตัวอย่าง Application UI (แกลเลอรี 6 หน้า → หน้ารายละเอียด 128 หน้า)
 
-| Category | Pages | Content |
+| หมวดหมู่ | จำนวนหน้า | เนื้อหา |
 |----------|-------|---------|
-| Dashboards 01 | 10 | Analytics, traffic, ecommerce, customer dashboards |
-| Dashboards 02 | 9 | Sales, financial, banking, fintech, cards dashboards |
-| Settings 01 | 11 | Profile, password, team, billing settings |
-| Settings 02 | 10 | Billing, notifications, integrations settings |
-| Informational 01 | 10 | Trade history, orders, customer, calendar pages |
-| Informational 02 | 9 | Messaging, projects, profiles, editor pages |
+| Dashboards 01 | 10 | แดชบอร์ด analytics, traffic, ecommerce, ลูกค้า |
+| Dashboards 02 | 9 | แดชบอร์ดยอดขาย, การเงิน, ธนาคาร, fintech, บัตร |
+| Settings 01 | 11 | ตั้งค่าโปรไฟล์, รหัสผ่าน, ทีม, การเรียกเก็บเงิน |
+| Settings 02 | 10 | การเรียกเก็บเงิน, การแจ้งเตือน, การเชื่อมต่อ |
+| Informational 01 | 10 | ประวัติการซื้อขาย, คำสั่งซื้อ, ลูกค้า, ปฏิทิน |
+| Informational 02 | 9 | การส่งข้อความ, โปรเจกต์, โปรไฟล์, editor |
 
-Each detail page features a **unique layout** with real sidebar navigation, data tables, charts, and form components.
+แต่ละหน้ารายละเอียดมี **เลย์เอาต์เฉพาะตัว** พร้อม sidebar navigation จริง, ตารางข้อมูล, กราฟ และฟอร์มต่างๆ
 
-### Shared Page Examples (6 gallery pages → 69 detail pages)
+### ตัวอย่างหน้าที่ใช้ร่วมกัน (แกลเลอรี 6 หน้า → หน้ารายละเอียด 69 หน้า)
 
-| Category | Pages | Variants |
-|----------|-------|----------|
-| Log in pages | 16 | Simple, card, split, social login, illustration |
-| Sign up pages | 21 | Simple, progress steps, split, sidebar progress |
-| Verification | 3 | Check email, enter code, success |
-| Forgot password | 5 | Enter email, check email, new password, success, sidebar |
-| 404 sections | 14 | Simple, split image, illustration, maintenance |
-| Email templates | 10 | Welcome, verification, video, invite, mockup |
+| หมวดหมู่ | จำนวนหน้า | รูปแบบ |
+|----------|-------|---------|
+| หน้า Log in | 16 | Simple, card, split, social login, illustration |
+| หน้าสมัครสมาชิก | 21 | Simple, progress steps, split, sidebar progress |
+| ยืนยันตัวตน | 3 | ตรวจอีเมล, กรอกรหัส, สำเร็จ |
+| ลืมรหัสผ่าน | 5 | กรอกอีเมล, ตรวจอีเมล, ตั้งรหัสใหม่, สำเร็จ, sidebar |
+| หน้า 404 | 14 | Simple, split image, illustration, maintenance |
+| เทมเพลตอีเมล | 10 | ต้อนรับ, ยืนยันตัวตน, วิดีโอ, คำเชิญ, mockup |
 
-### Marketing Components (18 pages)
+### คอมโพเนนต์การตลาด (18 หน้า)
 
 Banners, Blog sections, Careers sections, Contact sections, Content & rich text, CTA sections, FAQ sections, Features sections, Footers, Header navigations, Hero header sections, Header sections, Metrics sections, Newsletter CTA, Pricing sections, Social proof, Team sections, Testimonial sections
 
-### Marketing Examples (10 full-page examples)
+### ตัวอย่างหน้าการตลาด (10 หน้าแบบเต็ม)
 
 About pages, Blog posts, Blogs, Contact pages, FAQ pages, Landing pages, Legal pages, Pricing pages, Team pages, 404 pages
 
-## Key Features
+## ฟีเจอร์เด่น
 
-- **Lazy-loaded pages** — All pages use `React.lazy()` for optimal performance
-- **Wireframe thumbnails** — Gallery cards show mini wireframe previews matching each page type
-- **Interactive components** — Filters, toggles, tabs, and modals are fully functional
-- **Real data** — Tables, charts, and lists use realistic sample data
-- **Responsive** — Components adapt to different screen sizes
-- **Accessible** — Built on React Aria for WCAG compliance
+- **Lazy-loaded pages** — ทุกหน้าใช้ `React.lazy()` เพื่อประสิทธิภาพสูงสุด
+- **Wireframe thumbnails** — การ์ดในแกลเลอรีแสดงภาพ wireframe ย่อให้ตรงกับแต่ละประเภทหน้า
+- **คอมโพเนนต์แบบโต้ตอบได้** — ตัวกรอง, toggle, แท็บ และ modal ใช้งานได้จริงทั้งหมด
+- **ข้อมูลจริง** — ตาราง, กราฟ และรายการใช้ข้อมูลตัวอย่างที่สมจริง
+- **รองรับหลายขนาดหน้าจอ** — คอมโพเนนต์ปรับตามขนาดหน้าจอได้
+- **Accessible** — สร้างบน React Aria เพื่อรองรับมาตรฐาน WCAG
 
-## Customization
+## การปรับแต่ง
 
-### Brand Colors
+### สีแบรนด์
 
-Edit `styles/theme.css` to change the brand color palette:
+แก้ไขไฟล์ `styles/theme.css` เพื่อเปลี่ยนชุดสีแบรนด์:
 
 ```css
 @theme {
-  --color-brand-500: rgb(158 119 237);  /* Primary brand */
-  --color-brand-600: rgb(127 86 217);   /* Interactive */
-  /* ... full scale from 25 to 950 */
+  --color-brand-500: rgb(158 119 237);  /* สีหลักของแบรนด์ */
+  --color-brand-600: rgb(127 86 217);   /* สีสำหรับสถานะ interactive */
+  /* ... สเกลสีเต็มตั้งแต่ 25 ถึง 950 */
 }
 ```
 
-### Adding New Pages
+### การเพิ่มหน้าใหม่
 
-1. Create a new page file in `src/pages/`
-2. Add a lazy import in `src/app.tsx`
-3. Register in `pageComponents` object
-4. Add to the appropriate `navSections` array
+1. สร้างไฟล์หน้าใหม่ในโฟลเดอร์ `src/pages/`
+2. เพิ่ม lazy import ในไฟล์ `src/app.tsx`
+3. ลงทะเบียนในอ็อบเจกต์ `pageComponents`
+4. เพิ่มเข้าไปใน array `navSections` ที่เกี่ยวข้อง
 
-## License
+## สัญญาอนุญาต (License)
 
-The open-source Untitled UI components are licensed under the [MIT license](./LICENSE).
+คอมโพเนนต์โอเพนซอร์สของ Untitled UI อยู่ภายใต้สัญญาอนุญาต [MIT license](./LICENSE)
 
-This preview application (the `src/` directory) is for demonstration purposes.
+แอปพลิเคชันพรีวิวนี้ (โฟลเดอร์ `src/`) จัดทำขึ้นเพื่อการสาธิตเท่านั้น
 
-## Credits
+## เครดิต
 
-- [Untitled UI](https://www.untitledui.com/react) — Component library
+- [Untitled UI](https://www.untitledui.com/react) — ไลบรารีคอมโพเนนต์
 - [React Aria](https://react-spectrum.adobe.com/react-aria/) — Accessibility primitives
-- [Recharts](https://recharts.org/) — Chart library
+- [Recharts](https://recharts.org/) — ไลบรารีกราฟ
 - [Tailwind CSS](https://tailwindcss.com/) — Utility-first CSS
